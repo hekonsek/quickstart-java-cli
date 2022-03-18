@@ -1,23 +1,23 @@
 package com.github.hekonsek.quickstart.stdinout;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class StdInOut {
 
     private final InputStream input;
 
+    private final PrintStream output;
+
     private final String pattern;
 
-    public StdInOut(InputStream input, String pattern) {
+    public StdInOut(InputStream input, PrintStream output, String pattern) {
         this.input = input;
+        this.output = output;
         this.pattern = pattern;
     }
 
     public StdInOut(String pattern) {
-        this(System.in, pattern);
+        this(System.in, System.out, pattern);
     }
 
     boolean matchesPattern(String line) {
@@ -30,7 +30,7 @@ public class StdInOut {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     if (matchesPattern(line)) {
-                        System.out.println(line);
+                        output.println(line);
                     }
                 }
             }
