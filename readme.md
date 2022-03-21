@@ -7,7 +7,7 @@ This is a quickstart demonstrating how to use Java 17 fat jar to create a simple
 To build the project execute the following command:
 
 ```
-$mvn
+$ mvn
 ```
 
 Then our simple project can be executed as a fat jar:
