@@ -1,4 +1,4 @@
-# Quickstart: Java standard In/Out
+# Quickstart: Java command line tool
 
 This is a quickstart demonstrating how to use Java 17 fat jar to create a simple equivalent of the Linux `grep` command.
 
@@ -13,7 +13,7 @@ $ mvn
 After building, the project can be executed as a fat jar:
 
 ```
-$ printf "foo\nbar\nbaz" | java -jar target/quickstart-java-stdinout-0.0-SNAPSHOT-jar-with-dependencie
+$ printf "foo\nbar\nbaz" | java -jar target/quickstart-java-cli-0.0-SNAPSHOT-jar-with-dependencie
 s.jar bar
 bar
 ```

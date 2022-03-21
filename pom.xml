@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.hekonsek</groupId>
-    <artifactId>quickstart-java-stdinout</artifactId>
+    <artifactId>quickstart-java-cli</artifactId>
     <version>0.0-SNAPSHOT</version>
 
     <properties>
@@ -44,7 +44,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.hekonsek.quickstart.stdinout.StdInOut</mainClass>
+                            <mainClass>com.github.hekonsek.quickstart.cli.Grep</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
