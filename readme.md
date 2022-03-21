@@ -17,3 +17,7 @@ $ printf "foo\nbar\nbaz" | java -jar target/quickstart-java-stdinout-0.0-SNAPSHO
 s.jar bar
 bar
 ```
+
+## License
+
+This project is distributed under [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
