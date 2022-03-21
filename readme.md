@@ -10,7 +10,7 @@ To build the project execute the following command:
 $ mvn
 ```
 
-Then our simple project can be executed as a fat jar:
+After building, the project can be executed as a fat jar:
 
 ```
 $ printf "foo\nbar\nbaz" | java -jar target/quickstart-java-stdinout-0.0-SNAPSHOT-jar-with-dependencie
